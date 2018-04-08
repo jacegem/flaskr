@@ -20,5 +20,11 @@ app.register_blueprint(tree_mold, url_prefix="/ash")
 
 app.register_blueprint(bp_torrent, url_prefix="/torrent")
 
+
+@app.route('/')
+def root():
+    return 'HERE is root'
+
+
 if __name__ == '__main__':
     app.run()
