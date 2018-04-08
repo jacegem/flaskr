@@ -23,7 +23,7 @@ app.register_blueprint(bp_torrent, url_prefix="/torrent")
 
 @app.route('/')
 def root():
-    return 'HERE is root'
+    return 'HERE is root, I changed it!'
 
 
 if __name__ == '__main__':
